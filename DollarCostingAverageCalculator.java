@@ -14,7 +14,6 @@ public class DollarCostingAverageCalculator {
 
         Double totalInvest = DollarCostingAverageCalculatorInput.monthlyAmount * priceList.size();
         Double totalAmount = totalInvest / avgPrice;
-        System.out.println("You had invested " + avgPrice);
         System.out.println("You had invested " + totalInvest);
         System.out.println("You have " + totalAmount + " stock.");
         System.out.println("You have " + totalAmount * DollarCostingAverageCalculatorInput.todayPrice + " $");
