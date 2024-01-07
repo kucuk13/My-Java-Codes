@@ -5,21 +5,21 @@ import java.util.List;
 
 public class DollarCostingAverageCalculatorForBist {
 
-    public static Double TotalInvest = 0d;
-    public static Double TotalAmount = 0d;
-
     public static void main(String[] args) throws Exception {
+        double totalInvest = 0d;
+        double totalAmount = 0d;
+
         List<Double> priceList = parsePrices(DollarCostingAverageCalculatorInput.prices);
         List<Double> trUsdPriceList = parsePrices(DollarCostingAverageCalculatorInputForTrUsdPrices.prices);
         int i = 0;
         for (Double price : priceList){
-            TotalInvest += DollarCostingAverageCalculatorInput.monthlyAmount;
-            TotalAmount += DollarCostingAverageCalculatorInput.monthlyAmount * trUsdPriceList.get(i) / price;
+            totalInvest += DollarCostingAverageCalculatorInput.monthlyAmount;
+            totalAmount += DollarCostingAverageCalculatorInput.monthlyAmount * trUsdPriceList.get(i) / price;
             i++;
         }
-        System.out.println("You had invested " + TotalInvest);
-        System.out.println("You have " + TotalAmount + " stock.");
-        System.out.println("You have " + ((TotalAmount * DollarCostingAverageCalculatorInput.todayPrice) / DollarCostingAverageCalculatorInputForTrUsdPrices.todayPrice) + " $");
+        System.out.println("You had invested " + totalInvest);
+        System.out.println("You have " + totalAmount + " stock.");
+        System.out.println("You have " + ((totalAmount * DollarCostingAverageCalculatorInput.todayPrice) / DollarCostingAverageCalculatorInputForTrUsdPrices.todayPrice) + " $");
     }
 
     public static List<Double> parsePrices(String data) {
