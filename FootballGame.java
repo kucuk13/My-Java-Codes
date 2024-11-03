@@ -80,7 +80,7 @@ public class FootballGame {
 	
 	static char[] x = new char[]{'G', 'G', 'G', 'G', 'G', 'G', 'A', 'A', ' ', ' ', ' ', ' '};
 	public static void printWhichPlayer(FootballGame host, FootballGame away, int i){
-		if ((host.name == "Fenerbahçe" && isHost[i] == true)||(away.name == "Fenerbahçe" && isHost[i] == false)){
+		if ((host.name == "Fenerbahï¿½e" && isHost[i] == true)||(away.name == "Fenerbahï¿½e" && isHost[i] == false)){
 			int r = randomNumber(0, 11);
 			while (x[r] == '0'){
 				r = randomNumber(0, 11);
@@ -92,10 +92,10 @@ public class FootballGame {
 	
 	public static void main(String[] args) {
 
-		FootballGame fb = new FootballGame("Fenerbahçe", 20);
+		FootballGame fb = new FootballGame("Fenerbahï¿½e", 20);
 		FootballGame jv = new FootballGame("Juventus", 5);
 		FootballGame bm = new FootballGame("Bayern", 7);
-		FootballGame bc = new FootballGame("Barça", 9);
+		FootballGame bc = new FootballGame("Barï¿½a", 9);
 		FootballGame mc = new FootballGame("M. City", 11);
 		
 		FootballGame host = jv;
