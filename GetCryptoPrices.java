@@ -29,12 +29,8 @@ public class GetCryptoPrices {
             System.out.println("ONDO: " + getPrice(cryptocurrencies, "ONDO"));
             System.out.println("UNI: " + getPrice(cryptocurrencies, "UNI"));
             System.out.println("AVAX: " + getPrice(cryptocurrencies, "AVAX"));
-            System.out.println("SNX: " + getPrice(cryptocurrencies, "SNX"));//
             System.out.println("INJ: " + getPrice(cryptocurrencies, "INJ"));
-            System.out.println("ILV: " + getPrice(cryptocurrencies, "ILV"));//
-            System.out.println("IMX: " + getPrice(cryptocurrencies, "IMX"));
-            System.out.println("PORTAL: " + getPrice(cryptocurrencies, "PORTAL"));//
-            System.out.println("GOAT: " + getPrice(cryptocurrencies, "GOAT"));//
+            System.out.println("HYPE: " + getPrice(cryptocurrencies, "HYPE"));
         } catch (Exception e) {
             e.printStackTrace();
         }
