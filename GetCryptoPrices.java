@@ -21,6 +21,7 @@ public class GetCryptoPrices {
             System.out.println("ETH: " + getPrice(cryptocurrencies, "ETH"));
             System.out.println("SOL: " + getPrice(cryptocurrencies, "SOL"));
             System.out.println("LINK: " + getPrice(cryptocurrencies, "LINK"));
+            System.out.println("AVAX: " + getPrice(cryptocurrencies, "AVAX"));
             System.out.println("RENDER: " + getPrice(cryptocurrencies, "RENDER"));
             System.out.println("GRAPH: " + getPrice(cryptocurrencies, "GRT"));
             System.out.println("FET: " + getPrice(cryptocurrencies, "FET"));
@@ -28,7 +29,6 @@ public class GetCryptoPrices {
             System.out.println("TAO: " + getPrice(cryptocurrencies, "TAO"));
             System.out.println("ONDO: " + getPrice(cryptocurrencies, "ONDO"));
             System.out.println("UNI: " + getPrice(cryptocurrencies, "UNI"));
-            System.out.println("AVAX: " + getPrice(cryptocurrencies, "AVAX"));
             System.out.println("HYPE: " + getPrice(cryptocurrencies, "HYPE"));
         } catch (Exception e) {
             e.printStackTrace();
